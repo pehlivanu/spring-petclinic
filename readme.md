@@ -185,3 +185,11 @@ Congratulations, your project  was updated to version 3.0.13!
 
 Migrate applications to the latest Spring Boot 3.1 release. This recipe will modify an application's build files, make changes to deprecated/preferred APIs, and migrate configuration settings that have changes between versions. This recipe will also chain additional framework migrations (Spring Framework, Spring Data, etc) that are required as part of the migration to Spring Boot 3.0.
 
+For executing the update you need to execeute the following tasks
+1) add the recipe file to the recipes folder, then edit the build.gradle file
+2) Reload All Gradle Projects
+3) Run the Rewrite/rewriteRun, this updates the project
+4) Run the application/bootRun gradle task and start the project
+5) Visit [http://localhost:8080](http://localhost:8080) in your browser
+
+Congratulations, your project  was updated to version 3.1.10!
