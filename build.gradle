@@ -14,6 +14,7 @@ sourceCompatibility = '17'
 rewrite {
     activeRecipe( "org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0" )
     activeRecipe( "org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1" )
+    activeRecipe( "org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2" )
 }
 
 repositories {
