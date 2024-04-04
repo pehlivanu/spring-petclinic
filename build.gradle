@@ -1,6 +1,7 @@
 plugins {
   id 'org.springframework.boot' version '2.7.3'
   id 'io.spring.dependency-management' version '1.0.13.RELEASE'
+  id("org.openrewrite.rewrite") version("6.10.0")
   id 'java'
 }
 
@@ -9,6 +10,10 @@ apply plugin: 'java'
 group = 'org.springframework.samples'
 version = '2.7.3'
 sourceCompatibility = '11'
+
+rewrite {
+  activeRecipe("org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0")
+}
 
 repositories {
   mavenCentral()
@@ -34,6 +39,7 @@ dependencies {
   runtimeOnly 'org.postgresql:postgresql'
   developmentOnly 'org.springframework.boot:spring-boot-devtools'
   testImplementation 'org.springframework.boot:spring-boot-starter-test'
+  rewrite("org.openrewrite.recipe:rewrite-spring:5.7.0")
 }
 
 tasks.named('test') {
