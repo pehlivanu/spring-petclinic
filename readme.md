@@ -181,4 +181,7 @@ For executing the update you need to execeute the following tasks
 
 Congratulations, your project  was updated to version 3.0.13!
 
+## [Migrate to Spring Boot 3.1](https://docs.openrewrite.org/recipes/java/spring/boot3/upgradespringboot_3_1)
+
+Migrate applications to the latest Spring Boot 3.1 release. This recipe will modify an application's build files, make changes to deprecated/preferred APIs, and migrate configuration settings that have changes between versions. This recipe will also chain additional framework migrations (Spring Framework, Spring Data, etc) that are required as part of the migration to Spring Boot 3.0.
 
